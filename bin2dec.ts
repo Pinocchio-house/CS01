@@ -1,4 +1,5 @@
-import { dec2bin } from './dec2bin';
+import dec2bin from "./dec2bin";
+
 
 function bin2dec(input: boolean[]):number {
   return input.reduce(
@@ -10,3 +11,5 @@ function bin2dec(input: boolean[]):number {
 }
 
 console.log(bin2dec(dec2bin(10)!));
+
+export default bin2dec

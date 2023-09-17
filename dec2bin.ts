@@ -1,4 +1,4 @@
-export function dec2bin(input: number): null | boolean[] {
+function dec2bin(input: number): null | boolean[] {
   if (input % 1 !== 0) return null;
 
   const result: boolean[] = [];
@@ -11,3 +11,5 @@ export function dec2bin(input: number): null | boolean[] {
 }
 
 console.log(dec2bin(10));
+
+export default dec2bin; 
